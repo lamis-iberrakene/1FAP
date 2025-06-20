@@ -265,11 +265,11 @@ session_start();
         <h1 class="logo">Archéo-IT</h1>
         <nav>
           <ul class="nav-list">
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#features">Fonctionnalités</a></li>
-            <li><a href="#testimonials">Témoignages</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
-            <li><a href="register.html" class="btn-signup">S’inscrire</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#features">Fonctionnalités</a></li>
+            <li><a href="index.html#testimonials">Témoignages</a></li>
+            <li><a href="index.html#newsletter">Newsletter</a></li>
+            <li><a href="formulaire.html" class="btn-signup">S’inscrire</a></li>
           </ul>
         </nav>
       </div>
