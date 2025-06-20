@@ -140,3 +140,40 @@ body {
   color: #eee;
   text-decoration: none;
 }
+/* partie chantiers  */
+body {
+  padding-top: 80px; /* hauteur estimée du header */
+}
+
+.chantiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chantier-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.chantier-card:hover {
+  transform: translateY(-5px);
+}
+
+.chantier-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
