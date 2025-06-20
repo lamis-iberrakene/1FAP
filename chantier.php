@@ -275,7 +275,7 @@ session_start();
       </div>
 
 
-      
+
     </header>
   <main class="container">
     <h1 class="page-title">Nos derniers chantiers archéologiques</h1>
@@ -326,6 +326,17 @@ session_start();
         <p><strong>Dates :</strong> Octobre 2023</p>
         <p>Ce site boisé de 15 hectares comprend une restitution de la Grotte Chauvet et des espaces ludiques pour découvrir la Préhistoire. Une immersion unique dans l'art pariétal paléolithique.</p>
       </div>
+
+      
+      <!-- Chantier 6 -->
+      <div class="chantier-card">
+        <h2>Les Grottes d'Isturitz et d'Oxocelhaya </h2>
+        <img src="images/GROTTES D'ISTURITZ ET D'OXOCELHAYA.jpg" alt="Grottes d'Isturitz et d'Oxocelhaya">
+        <p><strong>Lieu :</strong> Nouvelle-Aquitaine, France</p>
+        <p><strong>Dates :</strong> Juin 2025</p>
+        <p>À seulement 30 minutes d'Anglet, explorez l'un des sites archéologiques les plus riches d'Europe : les grottes d'Isturitz et d'Oxocelhaya. Nichées dans la vallée de l'Arberoue, sous la colline de Gaztelu, ces grottes offrent un parcours fascinant de 600 mètres.</p>
+      </div>
+      
 
     </section>
   </main>
