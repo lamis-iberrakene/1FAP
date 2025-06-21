@@ -130,9 +130,15 @@ h2 {
 
 /* Footer */
 .site-footer {
-  background-color: var(--primary);
-  color: var(--secondary);
+
+  background: #333;
+  color: #eee;
   padding: 2rem 0;
+  text-align: center;
+}
+
+  background-color: var(--primary);
+  color: var(--secondary);  padding: 2rem 0;
   text-align: center;
 }
 .social-list {

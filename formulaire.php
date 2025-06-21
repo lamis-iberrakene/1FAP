@@ -34,7 +34,7 @@ $password = trim(shell_exec("python3 /var/www/html/FAP/script_mdp.py 1"));?>
     <!-- Formulaire -->
     <section id="formulaire" class="container" style="padding-top: 100px">
       <h2 class="animate-on-scroll">Formulaire d'enregistrement</h2>
-      <form action="#" method="post" class="full-form">
+      <form action="register.php" method="post" class="full-form">
         <div class="form-group">
           <label for="nom">Nom</label>
           <input type="text" id="nom" name="nom" placeholder="Votre nom" required class="form-control" />
