@@ -269,7 +269,8 @@ session_start();
             <li><a href="index.html#features">Fonctionnalités</a></li>
             <li><a href="index.html#testimonials">Témoignages</a></li>
             <li><a href="index.html#newsletter">Newsletter</a></li>
-            <li><a href="formulaire.html" class="btn-signup">S’inscrire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="formulaire.php" class="btn-signup">S’inscrire</a></li>
           </ul>
         </nav>
       </div>

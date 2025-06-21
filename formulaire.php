@@ -1,4 +1,6 @@
-<!-- formulaire.html -->
+<?php
+//Execute le script python et recup le mdp
+$password = trim(shell_exec("python3 /var/www/html/FAP/script_mdp.py 1"));?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -20,7 +22,7 @@
         <nav>
           <ul class="nav-list">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="features.html">Fonctionnalités</a></li>
+            <li><a href="index.html#features">Fonctionnalités</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="chantier.php">Chantiers de fouille</a></li>
             <li><a href="login.html" class="btn-signup">Se connecter</a></li>
@@ -64,7 +66,7 @@
         </div>
         <div class="form-group">
           <label for="password">Mot de passe</label>
-          <input type="password" id="password" name="password" placeholder="Mot de passe" required class="form-control" />
+          <input type="password" id="password" name="password" value="<?php echo htmlspecialchars($password);?>" placeholder="Mot de passe" required class="form-control" />
         </div>
         <button type="submit" class="btn-primary">Valider</button>
       </form>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact .css" />
+    <title>Archéo-IT – Contact</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <h1 class="logo">Archéo-IT</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#features">Fonctionnalités</a></li>
+                    <li><a href="index.html#testimonies">Témoignages</a></li>
+                    <li><a href="index.html#newsletter">Newsletter</a></li>
+                    <li><a href="chantier.php">Chantiers de fouille</a></li>
+                    <li><a href="login.html" class="btn-signup">Se connecter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section container">
+        <div class="contact-container animate-on-scroll">
+            <h2>Contactez-nous</h2>
+            <form action="traitement.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prenom">Prénom <span class="required">*</span></label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sujet">Sujet <span class="required">*</span></label>
+                    <select id="sujet" name="sujet" required>
+                        <option value="">-- Sélectionnez un sujet --</option>
+                        <option value="Demande d'infos">Demande d'infos</option>
+                        <option value="Demande de Rendez-vous">Demande de Rendez-vous</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Archéo-IT. Tous droits réservés.</p>
+            <ul class="social-list">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Retour en haut">↑</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Header background on scroll
+            const header = document.getElementById("header");
+            window.addEventListener("scroll", () => {
+                header.classList.toggle("scrolled", window.scrollY > 50);
+            });
+
+            // Intersection Observer for animations
+            const observer = new IntersectionObserver(
+                (entries, obs) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animated");
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+            document
+                .querySelectorAll(".animate-on-scroll")
+                .forEach((el) => observer.observe(el));
+
+            // Back to Top button
+            const backToTop = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                backToTop.classList.toggle("show", window.scrollY > 300);
+            });
+            backToTop.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+</html>
