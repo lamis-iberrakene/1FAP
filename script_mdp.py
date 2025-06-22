@@ -21,7 +21,7 @@ else:
 longueur =  random.randint(5, 12)
 
 # On crée une chaîne vide qui va contenir le mot de passe final
-mot_de_passe = "".join(random.choice(mdp) for _ in range(longeur))
+mot_de_passe = "".join(random.choice(mdp) for _ in range(longueur))
 
 print(mot_de_passe)
 

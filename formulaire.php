@@ -1,6 +1,8 @@
 <?php
-//Execute le script python et recup le mdp
-$password = trim(shell_exec("python3 /var/www/html/FAP/script_mdp.py 1"));?>
+$password = shell_exec("python3 /var/www/html/1FAP/script_mdp.py 3 ");
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -67,7 +69,14 @@ $password = trim(shell_exec("python3 /var/www/html/FAP/script_mdp.py 1"));?>
         <div class="form-group">
           <label for="password">Mot de passe</label>
           <input type="password" id="password" name="password" value="<?php echo htmlspecialchars($password);?>" placeholder="Mot de passe" required class="form-control" />
-        </div>
+           <button type="button" onclick="togglePassword()">👁️</button> 
+       </div>
+        <script>
+function togglePassword() {
+  const input = document.getElementById("password");
+  input.type = input.type === "password" ? "text" : "password";
+}
+</script>
         <button type="submit" class="btn-primary">Valider</button>
       </form>
     </section>
